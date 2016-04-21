@@ -77,7 +77,7 @@ function createTodo(title) {
 
     .fail(function(error) {
       console.log(error);
-
+      alert("alert");
       error_message = error.responseJSON.title[0];
       showError(error_message);
     });
